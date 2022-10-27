@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="col-12" style="height: 80vh; overflow: auto;position: absolute;top: 0; left: 0;width: 100%;">
+<div class="col-12 p-2" style="height: 80vh; overflow: auto;position: absolute;top: 0; left: 0;width: 100%;">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -22,8 +22,9 @@ layout: default
     {%- for post in posts -%}
     <a class="post-link" href="{{ post.url | relative_url }}">
     <div class="col">
-      <div class="card">
-        <img src="{{ 'assets/img/pawel-czerwinski-GFqo8rVmH30-unsplash-128kb.png' | relative_url }}" class="card-img-top" alt="post-image">
+      <div class="card h-100">
+        <div class="bg-pink" style="height: 2px"></div>
+        <!-- <img src="{{ 'assets/img/pawel-czerwinski-GFqo8rVmH30-unsplash-128kb.png' | relative_url }}" class="card-img-top" alt="post-image"> -->
         <div class="card-body">
           <h5 class="card-title">{{ post.title | escape }}</h5>
           <p class="fs-7 fw-2">{{ post.date | date: date_format }}</p>
