@@ -1,0 +1,11 @@
+.form-control {
+  background: var(--forms-bg-color) !important;
+  color: var(--forms-text-color) !important;
+  &:focus {
+    box-shadow: 0 0 2px 2px $pink;
+  }
+}
+
+textarea {
+  resize: none;
+}

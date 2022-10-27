@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  color: #e83e8c;
+}
+
+a:hover {
+  color: rgba(232, 62, 140, 0.80);
+}
+
+a.nav-link {
+  padding-left: 1rem;
+  border-radius: 6px;
+  color: rgba(173, 181, 189, 1.00);
+}
+
+a.nav-link:hover {
+  background: rgba(232, 62, 140, 1.00) !important;
+  border-radius: 6px;
+  color: #f1f1f1 !important;
+}

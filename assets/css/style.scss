@@ -1,0 +1,17 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  //"bs5ds/skins/{{ site.bs5ds.skin | default: 'auto' }}",
+  "bs5ds/bootstrap";
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: var(--background-color-body);
+  color: var(--text-color);
+}

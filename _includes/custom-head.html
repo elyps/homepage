@@ -1,0 +1,63 @@
+{% comment %}
+  Placeholder to allow defining custom head, in principle, you can add anything here, e.g. favicons:
+
+  1. Head over to https://realfavicongenerator.net/ to add your own favicons.
+  2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
+{% endcomment %}
+
+<script type="text/javascript">
+  // Wait for document to load
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var dt = localStorage.getItem('data-theme');
+    if (dt) {
+      document.documentElement.setAttribute("data-theme", dt);
+    }
+    else {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+    // Get our button switcher
+    var themeSwitcher = document.getElementById("theme-switcher");
+    // When our button gets clicked
+    themeSwitcher.onclick = function() {
+      // Get the current selected theme, on the first run
+      // it should be `light`
+      var currentTheme = document.documentElement.getAttribute("data-theme");
+      // Switch between `dark` and `light`
+      var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+      // Save to localStorage
+      localStorage.setItem("data-theme", switchToTheme);
+      // Set our currenet theme to the new one
+      document.documentElement.setAttribute("data-theme", switchToTheme);
+    }
+  });
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init('mUCLlnTzX367aIevW');
+  })();
+</script>
+<script type="text/javascript">
+  var cf = document.getElementById('contact-form');
+  if (cf) {
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('service_tlb978q', 'template_vt9pnzi', this)
+          .then(function () {
+            console.log('SUCCESS!');
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  }
+</script>

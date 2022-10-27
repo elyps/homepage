@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include githubBanner.html -%}
+
+    {%- include header.html -%}
+
+    <main class="container mt-4" aria-label="Content">
+      <div class="wrapper">
+          {{ content }}
+      </div>
+      {%- include footer.html -%}
+    </main>
+
+
+    {%- include scripts.html -%}
+
+  </body>
+
+</html>

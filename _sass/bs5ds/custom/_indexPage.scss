@@ -1,0 +1,25 @@
+.title-surname {
+  position: relative;
+  top: 6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 4rem;
+  background: rgba(232, 62, 140, 0.80);
+  border: 1px solid rgba(232, 62, 140, 1.00);
+  box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+}
+
+.title-name {
+  position: relative;
+  top: 14rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: -4rem;
+  background: rgba(232, 62, 140, 0.60);
+  border: 1px solid rgba(232, 62, 140, 1.00);
+  box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+}

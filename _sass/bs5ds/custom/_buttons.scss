@@ -1,0 +1,8 @@
+.btn-pink {
+  background: $pink;
+  color: $light;
+  &:hover {
+    background: $pink-600;
+    color: $gray-400;
+  }
+}
