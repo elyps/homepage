@@ -1,15 +1,19 @@
 ---
 layout: default
 ---
+
 <div class="col-12">
 <h2 class="post-title p-name mb-4" itemprop="name headline">{{ page.title | escape }}</h2>
-
-{% for tag in site.tags %}
-  <h5 id="{{ tag[0] }}">{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {%- if site.tags > 0 -%}
+    {% for tag in site.tags %}
+      <h5 id="{{ tag[0] }}">{{ tag[0] }}</h3>
+      <ul>
+        {% for post in tag[1] %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
     {% endfor %}
-  </ul>
-{% endfor %}
+  {% else %}
+  <p>No Tags found.</p>
+  {% endif %}
 </div>
