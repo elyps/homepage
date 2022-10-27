@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 excerpt_separator: <!--more-->
 ---
 

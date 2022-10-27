@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="col-12">
 <h2 class="post-title p-name mb-4" itemprop="name headline">{{ page.title | escape }}</h2>
-  {%- if site.tags > 0 -%}
+  {%- if site.categories.size > 0 -%}
     {% for category in site.categories %}
     <h5>{{ category[0] }}</h5>
     <ul>

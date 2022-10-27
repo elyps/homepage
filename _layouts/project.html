@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<a href="/projects/" class="btn btn-sm btn-pink mb-3">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 20 20">
+    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+  </svg>
+  Projects
+</a>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h2 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h2>
+
+    <div class="d-flex justify-content-between mb-2">
+      <div class="d-flex">
+        <span>
+          {% for project in site.projects %}
+            {% if project.tags[0] %}
+            <a class="rounded-pill btn btn-pink btn-sm" href="javascript:void">{{ project.tags[0] }}</a>
+            {% endif %}
+            {% if project.tags[1] %}
+            <a class="rounded-pill btn btn-pink btn-sm" href="javascript:void">{{ project.tags[1] }}</a>
+            {% endif %}
+            {% if project.tags[2] %}
+            <a class="rounded-pill btn btn-pink btn-sm" href="javascript:void">{{ project.tags[2] }}</a>
+            {% endif %}
+            {% if project.tags[3] %}
+            <a class="rounded-pill btn btn-pink btn-sm" href="javascript:void">{{ project.tags[3] }}</a>
+            {% endif %}
+            {% if project.tags[4] %}
+            <a class="rounded-pill btn btn-pink btn-sm" href="javascript:void">{{ project.tags[4] }}</a>
+            {% endif %}
+          {% endfor %}
+        </span>
+      </div>
+      <div class="d-flex text-white-50">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        &ensp;•&ensp; {% for author in page.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}
+      </div>
+    </div>
+    <hr><br>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+    <div class="text-white-50 d-flex justify-content-end mt-4">
+    {%- if page.modified_date -%}
+    Last Update: ~
+    {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+    <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+      {{ mdate | date: date_format }}
+    </time>
+    {%- endif -%}
+    </div>
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+
+{%- include authorCard.html -%}

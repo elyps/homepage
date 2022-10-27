@@ -1,3 +1,3 @@
 ---
-layout: articlesAll
+layout: articles
 ---
