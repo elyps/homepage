@@ -5,36 +5,43 @@ layout: default
 
   <header class="post-header">
     <h2 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h2>
-    <h4>
-      <div>
-        {% for tag in site.tags %}
-        <a href="/tags#{{ tag[0] }}">{{ tag[0] }}</a>
-        {% endfor %}
+
+    <div class="d-flex justify-content-between mb-2">
+      <div class="d-flex">
+        <span>
+          {% for tag in site.tags %}
+          <a class="rounded-pill btn btn-pink btn-sm" href="/tags#{{ tag[0] }}">{{ tag[0] }}</a>
+          {% endfor %}
+        </span>
       </div>
-    </h4>
-    <p class="post-meta">
+      <div class="d-flex text-white-50">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
-      {%- if page.modified_date -%}
-        ~
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-      {%- endif -%}
       {%- if page.author -%}
-        • {% for author in page.author %}
+        &ensp;•&ensp; {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
-      {%- endif -%}</p>
+      {%- endif -%}
+      </div>
+    </div>
+    <hr><br>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+    <div class="text-white-50 d-flex justify-content-end mt-4">
+    {%- if page.modified_date -%}
+    Last Update: ~
+    {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+    <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+      {{ mdate | date: date_format }}
+    </time>
+    {%- endif -%}
+    </div>
   </div>
 
   {%- if site.disqus.shortname -%}
