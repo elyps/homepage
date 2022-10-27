@@ -16,9 +16,26 @@
       document.documentElement.setAttribute("data-theme", "dark");
     }
     // Get our button switcher
-    var themeSwitcher = document.getElementById("theme-switcher");
+    var themeSwitcherDark = document.getElementById("theme-switcher-icon-dark");
+    var themeSwitcherLight = document.getElementById("theme-switcher-icon-light");
     // When our button gets clicked
-    themeSwitcher.onclick = function() {
+    themeSwitcherLight.onclick = function() {
+      themeSwitcherLight.classList.toggle("display-none")
+      themeSwitcherDark.classList.toggle("display-none")
+      // Get the current selected theme, on the first run
+      // it should be `light`
+      var currentTheme = document.documentElement.getAttribute("data-theme");
+      // Switch between `dark` and `light`
+      var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+      // Save to localStorage
+      localStorage.setItem("data-theme", switchToTheme);
+      // Set our currenet theme to the new one
+      document.documentElement.setAttribute("data-theme", switchToTheme);
+    }
+
+    themeSwitcherDark.onclick = function() {
+      themeSwitcherDark.classList.toggle("display-none")
+      themeSwitcherLight.classList.toggle("display-none")
       // Get the current selected theme, on the first run
       // it should be `light`
       var currentTheme = document.documentElement.getAttribute("data-theme");
