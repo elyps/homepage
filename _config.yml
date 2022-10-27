@@ -16,20 +16,20 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
-    # devto: jekyll
+    twitter: elypsCC
+    github:  elyps
+    devto: elyps
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
     # instagram: jekyll
-    # linkedin: jekyll
+    linkedin: bastian-fischer
     # pinterest: jekyll
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
     # youtube_channel_name: CloudCannon
     # telegram: jekyll
-    # googleplus: +jekyll
+    googleplus: bastian-fischer
     # microdotblog: jekyll
     # keybase: jekyll
     # google_scholar_id: qc6CJjYAAAAJ
