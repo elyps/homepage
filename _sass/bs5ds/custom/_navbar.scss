@@ -6,7 +6,8 @@
   position: fixed;
   z-index: 9000;
   background: var(--background-color-ui) !important;
-  box-shadow: 0 1px 3px rgba(232, 62, 140, 1.00);
+  /*box-shadow: 0 1px 3px rgba(232, 62, 140, 1.00);*/
+  border-right: 0.1px solid $pink;
 }
 
 .dropdown-nav {

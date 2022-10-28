@@ -6,3 +6,18 @@
     color: $gray-400;
   }
 }
+
+.btn-outline-pink {
+  border-color: $pink;
+  color: $pink;
+  &:hover {
+    background: $pink;
+    color: $light;
+  }
+}
+
+.btn-x {
+  right: 9px;
+  position: absolute;
+  top: 5px;
+}
