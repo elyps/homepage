@@ -14,8 +14,13 @@
         </a>
       </div>
       <div class="modal-body">
-        <form class="form" id="feedback-form" netlify>
-          <input type="hidden" name="feedback_number">
+        <form class="form" id="feedback-form" netlify-honeypot="bot-field"
+              data-netlify="true">
+          <p class="display-none">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           <div class="mb-3">
             <input type="text" class="form-control border-none" id="exampleFormControlInput1" placeholder="Your name" name="user_name" autofocus required>
           </div>
