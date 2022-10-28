@@ -54,28 +54,3 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function() {
-    emailjs.init('7B5F4-vzahUm2V471');
-  })();
-</script>
-<script type="text/javascript">
-  var cf = document.getElementById('contact-form')
-  if (cf) {
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        this.contact_number.value = Math.random() * 100000 | 0;
-        emailjs.sendForm('service_tlb978q', 'template_vt9pnzi', this)
-          .then(function () {
-            console.log('SUCCESS!');
-          }, function (error) {
-            console.log('FAILED...', error);
-          });
-      });
-    }
-  }
-</script>
-

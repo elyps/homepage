@@ -7,18 +7,20 @@ layout: default
   <h4>Feel free to drop me a line.</h4>
 
 
-  <form class="form mt-5" id="contact-form">
-    <input type="hidden" name="contact_number">
+  <form class="form mt-5" id="contact-form" netlify-honeypot="bot-field"
+        data-netlify="true">
+    <p class="display-none">
+      <label>
+        Don’t fill this out if you’re human: <input name="bot-field" />
+      </label>
+    </p>
     <div class="mb-3">
-      <!--                  <label for="exampleFormControlInput1" class="form-label">Name</label>-->
       <input type="text" class="form-control border-none" id="exampleFormControlInput1" placeholder="Please insert your name" name="user_name" autofocus required>
     </div>
     <div class="mb-3">
-      <!--                  <label for="exampleFormControlInput1" class="form-label">Email</label>-->
       <input type="email" class="form-control border-none" id="exampleFormControlInput1" placeholder="Please insert your email (e.g. name@example.com)" name="user_email" required>
     </div>
     <div class="mb-3">
-      <!--                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>-->
       <textarea class="form-control border-none" id="exampleFormControlTextarea1" rows="10" name="message" placeholder="Please insert your message" required></textarea>
     </div>
     <div class="mb-3">

@@ -61,5 +61,6 @@ collections:
 # theme: minima
 
 plugins:
+ - jekyll-environment-variables
  - jekyll-feed
  - jekyll-seo-tag
