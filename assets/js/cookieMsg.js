@@ -1,7 +1,7 @@
 function cookieMsgShow() {
   const ls = localStorage.getItem('accept-cookies')
   if (!ls) {
-    const modalBtn = document.getElementById('modalButton')
+    const modalBtn = document.getElementById('cookieModalButton')
     modalBtn.click()
   }
 }

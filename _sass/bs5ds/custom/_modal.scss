@@ -6,3 +6,17 @@
 .modal-header, .modal-footer {
   border: none;
 }
+
+.feedback-btn {
+  position: fixed;
+  right: -3rem;
+  bottom: 8rem;
+  transform: rotate(90deg);
+}
+
+#feedbackModal .modal-dialog {
+  position: fixed !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 33%;
+}
