@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body onload="cookieMsgShow()">
 
     {%- include githubBanner.html -%}
 
@@ -16,6 +16,7 @@
       {%- include footer.html -%}
     </main>
 
+    {%- include cookieMsg.html -%}
 
     {%- include scripts.html -%}
 
