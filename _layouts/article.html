@@ -41,8 +41,7 @@ layout: default
     {{ content }}
     <div class="text-darker d-flex justify-content-end mt-4">
     {%- if page.modified_date -%}
-    Last Update: ~
-    {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+    Last Update: {%- assign mdate = page.modified_date | date_to_xmlschema -%}
     <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
       {{ mdate | date: date_format }}
     </time>

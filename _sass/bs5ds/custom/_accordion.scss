@@ -1,0 +1,17 @@
+.accordion-item, .accordion-header, .accordion-body, .accordion-button {
+  background: var(--background-color-ui);
+  color: var(--text-color);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--background-color-ui);
+  color: var(--text-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+
+.accordion-button::after {
+  display: none;
+}
