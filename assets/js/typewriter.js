@@ -12,5 +12,5 @@ typewriter
   .deleteChars(9)
   .typeString(' <span style="color: rgba(232, 62, 140, 1.00);">UI/UX</span> Designer ')
   .typeString('and <span style="color: rgba(232, 62, 140, 1.00);">Open</span>-Sourcerer!')
-  .pauseFor(25000)
+  .pauseFor(50000)
   .start();
