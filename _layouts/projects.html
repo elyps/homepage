@@ -2,12 +2,16 @@
 layout: default
 ---
 
-<div class="col-12 p-2">
-  {%- if page.title -%}
-  <h2 class="page-heading mb-3">{{ page.title }}</h2>
-  {% else %}
-  <h2 class="page-heading mb-3">Projects</h2>
-  {%- endif -%}
+<div class="col-12 p-2 project-container">
+  <div class="mb-5">
+    {%- if page.title -%}
+    <h2 class="page-heading">{{ page.title }}</h2>
+    <h4>Have a look at some of my projects</h4>
+    {% else %}
+    <h2 class="page-heading">Projects</h2>
+    <h4>Have a look at some of my projects</h4>
+    {%- endif -%}
+  </div>
 
   {{ content }}
 
