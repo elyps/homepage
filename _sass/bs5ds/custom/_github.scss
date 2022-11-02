@@ -7,6 +7,11 @@
   overflow:hidden;
   height:200px;
   z-index:1000;
+
+  @media (max-width: 500px) {
+    top: 55px;
+    right: -30px;
+  }
 }
 
 #forkongithub a{
@@ -25,7 +30,7 @@
 }
 
 #forkongithub a span {
-  margin-left: 4.5rem;
+  margin-left: 0;
 }
 
 #forkongithub a:hover{

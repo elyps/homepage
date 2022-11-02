@@ -18,5 +18,9 @@
   position: fixed !important;
   right: 0 !important;
   bottom: 0 !important;
-  width: 33%;
+  width: 300px;
+
+  @media (max-width: 500px) {
+    right: -0.7rem !important;
+  }
 }

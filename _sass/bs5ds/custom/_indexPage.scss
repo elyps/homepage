@@ -9,6 +9,8 @@
   background: rgba(232, 62, 140, 0.80);
   border: 1px solid rgba(232, 62, 140, 1.00);
   box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+  font-size: 6rem;
+  letter-spacing: 0.8rem;
 }
 
 .title-name {
@@ -22,6 +24,8 @@
   background: rgba(232, 62, 140, 0.60);
   border: 1px solid rgba(232, 62, 140, 1.00);
   box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+  font-size: 6rem;
+  letter-spacing: 0.8rem;
 }
 
 /* OffCanvas */
@@ -49,4 +53,27 @@
   background: rgba(232, 62, 140, 0.60);
   border: 1px solid rgba(232, 62, 140, 1.00);
   box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+}
+
+@media (max-width: 500px) {
+  .title-surname {
+    font-size: 1.5rem !important;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    top: 3.5rem;
+    letter-spacing: 0.8rem;
+    margin-left: 1rem;
+  }
+  .title-name {
+    font-size: 1.5rem !important;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    top: 7rem;
+    letter-spacing: 0.8rem;
+    margin-left: -7rem;
+  }
 }

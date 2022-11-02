@@ -2,4 +2,10 @@
   position: relative;
   top: 3rem;
   font-size: 2rem;
+
+  @media (max-width: 500px) {
+    top: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }

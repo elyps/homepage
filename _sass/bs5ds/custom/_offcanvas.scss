@@ -1,5 +1,10 @@
 .offcanvas {
   margin-left: 75px;
+
+  @media (max-width: 500px) {
+    margin-left: 0;
+    z-index: 9000;
+  }
 }
 
 .offcanvas-header, .offcanvas-body {
