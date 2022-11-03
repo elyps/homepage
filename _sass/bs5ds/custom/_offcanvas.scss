@@ -1,6 +1,13 @@
 .offcanvas {
   margin-left: 75px;
 
+  background: var(--background-color-ui) !important;
+  box-shadow: 0 8px 32px 0 rgba(33, 37, 41, 0.18);
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
+  /* border-radius: 10px; */
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
   @media (max-width: 500px) {
     margin-left: 0;
     z-index: 9000;

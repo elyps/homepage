@@ -34,7 +34,7 @@
 }
 
 #forkongithub a:hover{
-  background:rgba(232, 62, 140, 1.00);
+  background: $purple;
   color:#fff;
 }
 
@@ -46,7 +46,7 @@
   top: 1px;
   left: 0;
   height: 1px;
-  background: rgba(232, 62, 140, 1.00);
+  background: $purple;
 }
 
 #forkongithub a::after{

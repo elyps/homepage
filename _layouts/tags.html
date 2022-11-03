@@ -16,7 +16,7 @@ layout: default
     {% for post in tag[1] %}
     <div id="{{ tag[0] }}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}" class="accordion-post-title">{{ post.title }}</a>
       </div>
     </div>
     {% endfor %}

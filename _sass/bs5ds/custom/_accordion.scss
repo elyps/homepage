@@ -1,11 +1,11 @@
 .accordion-item, .accordion-header, .accordion-body, .accordion-button {
   background: var(--background-color-ui);
-  color: var(--text-color);
+  color: $purple;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: var(--background-color-ui);
-  color: var(--text-color);
+  color: $purple;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -14,4 +14,8 @@
 
 .accordion-button::after {
   display: none;
+}
+
+.accordion-post-title {
+  color: var(--text-color);
 }

@@ -1,10 +1,10 @@
 a {
   text-decoration: none;
-  color: #e83e8c;
+  color: $purple;
 }
 
 a:hover {
-  color: rgba(232, 62, 140, 0.80);
+  color: $purple-300;
 }
 
 a.nav-link {
@@ -14,7 +14,7 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-  background: rgba(232, 62, 140, 1.00) !important;
+  background: $purple !important;
   border-radius: 6px;
   color: #f1f1f1 !important;
 }

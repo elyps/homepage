@@ -7,10 +7,10 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(2500)
-  .typeString('<span style="color: rgba(232, 62, 140, 1.00);">Software</span> Developer, Designer ')
+  .typeString('<span style="color: rgba(111, 66, 193, 1.00);">Software</span> Developer, Designer ')
   .pauseFor(300)
   .deleteChars(9)
-  .typeString(' <span style="color: rgba(232, 62, 140, 1.00);">UI/UX</span> Designer ')
-  .typeString('and <span style="color: rgba(232, 62, 140, 1.00);">Open</span>-Sourcerer!')
+  .typeString(' <span style="color: rgba(111, 66, 193, 1.00);">UI/UX</span> Designer ')
+  .typeString('and <span style="color: rgba(111, 66, 193, 1.00);">Open</span>-Sourcerer!')
   .pauseFor(50000)
   .start();

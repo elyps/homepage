@@ -1,17 +1,17 @@
 .btn-pink {
-  background: $pink;
+  background: $purple;
   color: $light;
   &:hover {
-    background: $pink-600;
+    background: $purple-600;
     color: $gray-400;
   }
 }
 
 .btn-outline-pink {
-  border-color: $pink;
-  color: $pink;
+  border-color: $purple;
+  color: $purple;
   &:hover {
-    background: $pink;
+    background: $purple;
     color: $light;
   }
 }
