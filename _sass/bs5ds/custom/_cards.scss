@@ -2,8 +2,18 @@
   background: var(--background-color-ui);
   color: var(--text-color);
   transition: 200ms ease-in-out;
+  height: 100% !important;
+  .card-body {
+    position: relative;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
   &:hover {
     transform: scale(1.02);
+    border-left: 1px solid rgba(111, 66, 193, 1.00);
+    border-right: 1px solid rgba(111, 66, 193, 1.00);
+    border-bottom: 1px solid rgba(111, 66, 193, 1.00);
   }
 }
 

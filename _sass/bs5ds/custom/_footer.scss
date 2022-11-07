@@ -3,12 +3,27 @@
   transform: translateX(-50%);
   /*background: var(--background-color-ui);*/
   border-radius: 12px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
+  margin-top: 1rem;
 
   @media (max-width: 500px) {
     bottom: 0.5rem;
   }
 }
 
+.footer {
+  position: relative;
+}
+
+.footer-home {
+  margin-top: 20rem;
+}
+
+.footer-contact {
+  margin-top: 3rem;
+}
+
+.footer-articles {
+  margin-top: 3rem;
+}

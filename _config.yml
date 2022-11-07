@@ -1,11 +1,37 @@
 title: Bastian Fischer
+url: https://bastian-fischer.dev
+
+main_title:
+  name: Fischer
+  subname: elyps.
+  surname: Bastian
+
 author:
-  name: Bastian Fischer
-  email: kontakt@bastian-fischer.dev
+  name: Bastian elyps. Fischer
+  email: kontakt[at]bastian-fischer[dot]dev
+  status: Swift Enthusiast
+  desc: >
+    Bastian Fischer is a Software-Developer, UI/UX-Designer and Open-Sourcerer 😉 from Germany, SH, Kiel.
+  github:
+    profileURL: https://github.com/elyps
+
 description: > # this means to ignore newlines until "show_excerpts:"
   Software Developer, UI/UX Designer & Open-Sourcerer
 
 show_excerpts: true # set to true to show excerpts on the homepage
+
+baseurl_root: .
+lang: de
+
+feed:
+  posts_limit: 20
+  disable_in_development: false
+  collections:
+    - projects
+    - posts
+  tags: true
+  categories:
+    - development
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -15,6 +41,12 @@ minima:
 collections:
   projects:
     output: true
+  articles:
+    output: true
+    sidebar_label: Articles
+  posts:
+    output: true
+    sidebar_label: Articles
 
   # generate social links in footer
   social_links:
@@ -58,7 +90,22 @@ collections:
 # Build settings
 # theme: minima
 
+# i18n
+# language_data: data.lang.%%
+# language_includes_dir: _i18n
+languages: ['de', 'en']
+exclude_from_localizations: ["js", "images", "css", "sass"]
+
+jekyll_admin:
+  hidden_links:
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
+
 plugins:
  - jekyll-environment-variables
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-multiple-languages-plugin

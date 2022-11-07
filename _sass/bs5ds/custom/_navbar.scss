@@ -30,12 +30,13 @@
   color: var(--text-color);
 }
 
-.nav-title {
-  margin-top: 6rem;
-  font-weight: 700;
+.nav-title, .navbar-brand {
+  position: relative;
+  top: 6rem !important;
+  font-weight: 600;
 
   @media (max-width: 500px) {
-    margin-top: -2rem;
+    margin-top: -14.2rem;
     margin-left: 3rem;
   }
 }
@@ -47,5 +48,15 @@
     position: fixed;
     top: 0.5rem;
     right: 1rem;
+  }
+}
+
+.lang-switcher {
+  margin-left: 0.5rem;
+
+  @media (max-width: 500px) {
+    position: fixed;
+    top: 0.5rem;
+    right: 4rem;
   }
 }

@@ -11,12 +11,15 @@
   @media (max-width: 500px) {
     top: 55px;
     right: -30px;
+    width: 200px;
+    height: 200px;
   }
 }
 
 #forkongithub a{
+  color: $purple-300;
   width:300px;
-  padding: 0.5rem;
+  padding: 0.3rem;
   position:absolute;
   top:60px;
   right:-60px;
@@ -27,6 +30,10 @@
   -o-transform:rotate(45deg);
   box-shadow:4px 4px 10px rgba(50,50,50,0.1);
   background: var(--background-color-ui);
+
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 }
 
 #forkongithub a span {

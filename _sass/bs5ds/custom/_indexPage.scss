@@ -1,81 +1,164 @@
 .title-surname {
   position: relative;
-  top: 1rem;
+  top: 120px;
+  right: 150px;
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-left: 4rem;
-  background: $purple;
-  border: $purple-300;
-  box-shadow:4px 4px 10px rgba(50,50,50,0.1);
-  font-size: 6rem;
-  letter-spacing: 0.8rem;
-  color: $light;
-}
-
-.title-name {
-  position: relative;
-  top: 8rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-left: -4rem;
-  background: $purple;
+  background: rgba(111, 66, 193, 0.60);
   border: 1px solid $purple-300;
   box-shadow:4px 4px 10px rgba(50,50,50,0.1);
   font-size: 6rem;
   letter-spacing: 0.8rem;
-  color: $light;
+  color: rgba(255, 255, 255, 1.00);
+  font-weight: bolder !important;
+}
+
+.title-subname {
+  position: relative;
+  top: 20px;
+  left: 700px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: rgba(111, 66, 193, 0.60);
+  border: 1px solid $purple-300;
+  box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+  font-size: 4rem;
+  letter-spacing: 0.8rem;
+  line-height: 2rem;
+  height: 120px;
+  color: rgba(153, 161, 169, 1.00);
+  font-weight: lighter !important;
+}
+
+.title-name {
+  position: relative;
+  top: 250px;
+  right: 180px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: rgba(111, 66, 193, 0.60);
+  border: 1px solid $purple-300;
+  box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+  font-size: 6rem;
+  letter-spacing: 0.8rem;
+  color: rgba(206, 212, 218, 1.00);
 }
 
 /* OffCanvas */
 .title-surname-oc {
   position: relative;
-  top: -1rem;
+  top: 20px;
+  right: 70px;
   padding-left: 1rem;
   padding-right: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: 0.7rem;
-  background: $purple;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: rgba(111, 66, 193, 0.60);
   border: 1px solid $purple-300;
   box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+  font-size: 1rem;
+  height: 45px;
+  line-height: 1.5rem;
+  letter-spacing: 0.6rem;
+  color: $light;
+}
+
+.title-subname-oc {
+  position: relative;
+  top: -10px;
+  left: 160px;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  background: rgba(111, 66, 193, 0.60);
+  border: 1px solid $purple-300;
+  box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+  font-size: 0.8rem;
+  letter-spacing: 0.6rem;
+  line-height: 1.7rem;
+  height: 35px;
+  width: auto;
+  color: $light;
 }
 
 .title-name-oc {
   position: relative;
-  top: 1rem;
+  top: 42px;
+  right: 77px;
   padding-left: 1rem;
   padding-right: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: -0.7rem;
-  background: $purple;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: rgba(111, 66, 193, 0.60);
   border: 1px solid $purple-300;
   box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+  font-size: 1rem;
+  height: 45px;
+  line-height: 1.5rem;
+  letter-spacing: 0.6rem;
+  color: $light;
 }
 
 @media (max-width: 500px) {
   .title-surname {
-    font-size: 2rem !important;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    top: 3rem;
-    letter-spacing: 0.8rem;
-    margin-left: 0.5rem;
+    position: relative;
+    top: 70px;
+    right: 60px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgba(111, 66, 193, 0.60);
+    border: 1px solid $purple-300;
+    box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+    font-size: 1.4rem;
+    height: 65px;
+    line-height: 3rem;
+    letter-spacing: 0.6rem;
+    color: $light;
   }
+
+  .title-subname {
+    position: relative;
+    top: 30px;
+    left: 170px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    background: rgba(111, 66, 193, 0.60);
+    border: 1px solid $purple-300;
+    box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+    font-size: 1rem;
+    letter-spacing: 0.6rem;
+    line-height: 2rem;
+    height: 45px;
+    width: auto;
+    color: $light;
+  }
+
   .title-name {
-    font-size: 2rem !important;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    top: 7rem;
-    letter-spacing: 0.8rem;
-    margin-left: -7rem;
+    position: relative;
+    top: 92px;
+    right: 67px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgba(111, 66, 193, 0.60);
+    border: 1px solid $purple-300;
+    box-shadow:4px 4px 10px rgba(50,50,50,0.1);
+    font-size: 1.4rem;
+    height: 65px;
+    line-height: 3rem;
+    letter-spacing: 0.6rem;
+    color: $light;
   }
 }

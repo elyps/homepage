@@ -10,11 +10,13 @@ a:hover {
 a.nav-link {
   padding-left: 1rem;
   border-radius: 6px;
+  border: 1px solid transparent;
   color: rgba(173, 181, 189, 1.00);
 }
 
 a.nav-link:hover {
-  background: $purple !important;
+  background: rgba(111, 66, 193, 0.60) !important;
+  border: 1px solid $purple-300;
   border-radius: 6px;
   color: #f1f1f1 !important;
 }

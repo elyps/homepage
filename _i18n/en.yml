@@ -1,0 +1,15 @@
+global:
+  deutsch: Deutsch
+  english: English
+
+menu:
+  home: Home
+  about: About
+  articles: Articles
+  projects: Projects
+  contact: Contact
+  categories: Categories
+
+about:
+  welcome: Welcome
+  message: Welcome message.

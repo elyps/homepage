@@ -9,8 +9,9 @@
     </div>
     <h6 class="offcanvas-title" id="offcanvasExampleLabel">
       <div class="d-flex justify-content-center my-5">
-        <div class="ls-08 br-6 mt-3 title-surname-oc animate__animated animate__fadeInLeftBig">bastian</div>
-        <div class="ls-08 fw-2 br-6 mt-3 title-name-oc animate__animated animate__fadeInRightBig">fischer</div>
+        <div class="fw-2 br-6 title-subname-oc text-white-50 animate__animated animate__fadeInDownBig">elyps.</div>
+        <div class="br-6 title-surname-oc animate__animated animate__fadeInLeftBig">bastian</div>
+        <div class="fw-2 br-6 title-name-oc animate__animated animate__fadeInRightBig">fischer</div>
       </div>
     </h6>
   </div>
@@ -18,19 +19,19 @@
     <div>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link ps-2 active" aria-current="page" href="/">Home</a>
+          <a class="nav-link ps-2 active" aria-current="page" href="/">{% t 'menu.home' %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ps-2" href="/about/">About</a>
+          <a class="nav-link ps-2" href="/about/">{% t 'menu.about' %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ps-2" href="/articles/">Articles</a>
+          <a class="nav-link ps-2" href="/articles/">{% t 'menu.articles' %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ps-2" href="/projects/">Projects</a>
+          <a class="nav-link ps-2" href="/projects/">{% t 'menu.projects' %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ps-2" href="/contact/">Contact</a>
+          <a class="nav-link ps-2" href="/contact/">{% t 'menu.contact' %}</a>
         </li>
       </ul>
     </div>
@@ -41,9 +42,11 @@
           <a class="nav-link ps-2" href="/tags/">Tags</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ps-2" href="/categories/">Categories</a>
+          <a class="nav-link ps-2" href="/categories/">{% t 'menu.categories' %}</a>
         </li>
       </ul>
+
+
     </div>
 
   </div>
