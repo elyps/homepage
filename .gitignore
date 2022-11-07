@@ -24,3 +24,7 @@ Thumbs.db
 # Env
 site.env
 *.env
+
+# npm
+package.json
+node_modules
