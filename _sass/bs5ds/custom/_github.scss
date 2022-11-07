@@ -19,7 +19,7 @@
 #forkongithub a{
   color: $purple-300;
   width:300px;
-  padding: 0.3rem;
+  padding: 0.5rem;
   position:absolute;
   top:60px;
   right:-60px;
@@ -33,6 +33,7 @@
 
   @media (max-width: 500px) {
     width: 300px;
+    padding: 0.3rem;
   }
 }
 
