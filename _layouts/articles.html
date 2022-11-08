@@ -4,13 +4,8 @@ layout: default
 
 <div class="col-md-12 p-2 articles-container">
   <div class="mb-5">
-  {%- if page.title -%}
-    <h2 class="page-heading">{{ page.title }}</h2>
-    <h4>Interesting articles about development from A to Z</h4>
-  {% else %}
-    <h2 class="page-heading">Articles</h2>
-    <h4>Interesting articles about development from A to Z</h4>
-  {%- endif -%}
+    <h2 class="page-heading">{% t 'articles.title' %}</h2>
+    <h4>{% t 'articles.sub_title' %}</h4>
   </div>
 
   {{ content }}

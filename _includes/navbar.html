@@ -26,10 +26,10 @@
         <ul class="dropdown-menu dropdown-menu-dark text-center">
           {% if site.lang == "de" %}
           {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
-          <li><a class="dropdown-item" href="{{ link1 }}" >🇺🇸 {% t global.english %}</a></li>
+          <li><a class="dropdown-item" href="{{ link1 }}" onclick="setLangEN()" id="link1">🇺🇸 {% t global.english %}</a></li>
           {% elsif site.lang == "en" %}
           {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-          <li><a class="dropdown-item" href="{{ link2 }}" >🇩🇪 {% t global.deutsch %}</a></li>
+          <li><a class="dropdown-item" href="{{ link2 }}" onclick="setLangDE()" id="link2">🇩🇪 {% t global.deutsch %}</a></li>
           {% endif %}
         </ul>
       </li>
@@ -48,3 +48,14 @@
 
   </div>
 </nav>
+
+<script>
+  function setLangDE() {
+    localStorage.setItem("language", "de")
+  }
+  function setLangEN() {
+    localStorage.setItem("language", "en")
+  }
+</script>
+
+

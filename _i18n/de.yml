@@ -11,5 +11,48 @@ menu:
   categories: Kategorien
 
 about:
-  welcome: Willkommen
-  message: Willkommens Nachricht.
+  title: Über mich
+  welcome: Hallo.
+  message: >
+    Ich bin Bastian Fischer.
+    Willkommen in meinem digitalen Garten.
+    Fühlen Sie sich frei, herumzuspielen, sich einige tolle Projekte anzusehen oder
+    einige interessante Artikel zu lesen.
+
+footer:
+  subscribe: Einschreiben
+  public_key: Öffentlicher Schlüssel
+  impress: Impressum
+  data_policy: Datenschutz
+  copyright: © Copyright 2022 - Bastian Fischer. Alle Rechte vorbehalten.
+
+github:
+  banner: Folgen Sie mir auf Github
+
+articles:
+  title: Artikel
+  sub_title: Interessante Artikel über Entwicklung von A bis Z
+  not_found: Keine Artikel gefunden. In Arbeit... Demnächst verfügbar!
+
+projects:
+  title: Projekte
+  sub_title: Schauen Sie sich einige meiner Projekte an
+  not_found: Keine Projekte gefunden. Zur Zeit in Arbeit.. in der Zwischenzeit besuchen Sie bitte mein Github-Profil. Vielen Dank!
+
+contact:
+  title: Kontakt
+  sub_title: Zögern Sie nicht, mir eine Nachricht zu schreiben.
+  send_btn: Nachricht abschicken
+  ph_email: Please insert your email
+  ph_name: Please insert your name
+  ph_text: Please insert your message
+
+categories:
+  title: Kategorien
+  sub_title: Alle Kategorien von allen Artikeln
+  not_found: Keine Kategorien gefunden.
+
+tags:
+  title: Tags
+  sub_title: Alle Tags von allen Artikeln
+  not_found: Keine Tags gefunden.

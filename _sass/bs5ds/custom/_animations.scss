@@ -1,0 +1,42 @@
+.fade-in-fast {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation-delay: 0s !important;
+
+  animation: fade-in-slow; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s !important; /* don't forget to set a duration! */
+}
+
+@keyframes fade-in-slow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out-fast {
+  display: inline-block;
+  opacity: 0;
+  margin: 0 0.5rem;
+  animation-delay: 0s !important;
+
+  animation: fade-out-fast; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s !important; /* don't forget to set a duration! */
+}
+
+@keyframes fade-out-fast {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

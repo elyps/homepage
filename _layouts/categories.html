@@ -2,7 +2,8 @@
 layout: default
 ---
 <div class="col-12">
-<h2 class="post-title p-name mb-4" itemprop="name headline">{{ page.title | escape }}</h2>
+  <h2 class="post-title p-name mb-2" itemprop="name headline">{% t 'categories.title' %}</h2>
+  <h4 class="mb-4">{% t 'categories.sub_title' %}</h4>
 
 <div class="accordion accordion-flush" id="accordionFlushExample">
   {%- if site.categories.size > 0 -%}
@@ -23,7 +24,7 @@ layout: default
   </div>
   {% endfor %}
   {% else %}
-  <p>No Categories found.</p>
+  <p>{% t 'categories.not_found' %}</p>
   {% endif %}
 </div>
 </div>

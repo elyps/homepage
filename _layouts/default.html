@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html>
 
   {%- include head.html -%}
 
-  <body onload="cookieMsgShow()" class="animate__animated animate__fadeIn">
+  <body onload="setURL();cookieMsgShow();" style="transition: 200ms ease-in-out;">
 
+  <div class="fade-out-fast d-flex justify-content-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);transition: 200ms ease-in-out;">
+    <div class="spinner-grow text-pink" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="fade-in-fast">
     {%- include header.html -%}
 
     <main class="container mt-4" aria-label="Content">
@@ -12,7 +20,7 @@
           {{ content }}
       </div>
     </main>
-
+  </div>
     {%- include cookieMsg.html -%}
 
     {%- include scripts.html -%}
@@ -20,3 +28,15 @@
   </body>
 
 </html>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      const lang = localStorage.getItem('language');
+      document.documentElement.setAttribute('lang', lang);
+    })
+
+</script>
+
+
+

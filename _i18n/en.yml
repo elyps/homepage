@@ -11,5 +11,48 @@ menu:
   categories: Categories
 
 about:
-  welcome: Welcome
-  message: Welcome message.
+  title: About Me
+  welcome: Hello.
+  message: >
+    I'm Bastian Fischer.
+    Welcome to my Digital Garden.
+    Feel free t play around, look at some awesome Projects or
+    read some interesting articles.
+
+footer:
+  subscribe: Subscribe
+  public_key: Public Key
+  impress: Impress
+  data_policy: Data-Policy
+  copyright: © Copyright 2022 - Bastian Fischer. All rights reserved.
+
+github:
+  banner: Follow me on GitHub
+
+articles:
+  title: Articles
+  sub_title: Interesting articles about development from A to Z
+  not_found: No Articles found. Work in progress... Coming soon!
+
+projects:
+  title: Projects
+  sub_title: Take a look at some of my projects
+  not_found: No Projects found. Work in progress.. in the meanwhile please visit my Github profile. Thank you!
+
+contact:
+  title: Contact
+  sub_title: Feel free to drop me a line
+  send_btn: Send message
+  ph_email: Bitte geben Sie Ihre Email ein
+  ph_name: Bitte geben Sie Ihren Namen ein
+  ph_text: Bitte geben Sie Ihre Nachricht ein
+
+categories:
+  title: Categories
+  sub_title: All categories from all articles
+  not_found: No categories found.
+
+tags:
+  title: Tags
+  sub_title: All tags from all articles
+  not_found: No tags found.

@@ -4,13 +4,8 @@ layout: default
 
 <div class="col-12 p-2 project-container">
   <div class="mb-5">
-    {%- if page.title -%}
-    <h2 class="page-heading">{{ page.title }}</h2>
-    <h4>Take a look at some of my projects</h4>
-    {% else %}
-    <h2 class="page-heading">Projects</h2>
-    <h4>Take a look at some of my projects</h4>
-    {%- endif -%}
+    <h2 class="page-heading">{% t 'projects.title' %}</h2>
+    <h4>{% t 'projects.sub_title' %}</h4>
   </div>
 
   {{ content }}
@@ -61,7 +56,7 @@ layout: default
   </div>
   {%- endif %}
   {% else %}
-  <p>No Projects found. Work in progress.. in the meanwhile please visit my Github profile. Thank you!</p>
+  <p>{% t 'projects.not_found' %}</p>
   {%- endif -%}
 
 </div>
