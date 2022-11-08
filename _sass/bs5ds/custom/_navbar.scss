@@ -60,3 +60,10 @@
     right: 4rem;
   }
 }
+
+.dropdown-menu-dark {
+  background: var(--background-color-ui) !important;
+  .dropdown-item {
+    color: var(--text-color) !important;
+  }
+}

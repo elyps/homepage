@@ -41,9 +41,6 @@ minima:
 collections:
   projects:
     output: true
-  articles:
-    output: true
-    sidebar_label: Articles
   posts:
     output: true
     sidebar_label: Articles
