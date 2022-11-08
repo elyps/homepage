@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body onload="setURL();cookieMsgShow();" style="transition: 200ms ease-in-out;">
+  <body onload="cookieMsgShow();" style="transition: 200ms ease-in-out;">
 
   <div class="fade-out-fast d-flex justify-content-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);transition: 200ms ease-in-out;">
     <div class="spinner-grow text-pink" role="status">
@@ -31,10 +31,23 @@
 
 <script>
 
-    document.addEventListener("DOMContentLoaded", function(event) {
-      const lang = localStorage.getItem('language');
-      document.documentElement.setAttribute('lang', lang);
-    })
+  function setURL() {
+    const la = document.documentElement.getAttribute('lang');
+    const link1 = document.getElementById('link1');
+    const link2 = document.getElementById('link2');
+
+    if (la === "en") {
+      link1.click();
+    } else {
+      link2.click();
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    const lang = localStorage.getItem('language');
+    document.documentElement.setAttribute('lang', lang);
+    setURL();
+  })
 
 </script>
 

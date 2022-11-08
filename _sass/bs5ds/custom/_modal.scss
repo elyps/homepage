@@ -1,5 +1,5 @@
 .modal-content {
-  background: var(--background-color-ui);
+  /*background: var(--background-color-ui);*/
   color: var(--text-color);
 }
 
@@ -23,4 +23,8 @@
   @media (max-width: 500px) {
     right: -0.7rem !important;
   }
+}
+
+.modal-backdrop.show {
+  opacity: 0 !important;
 }

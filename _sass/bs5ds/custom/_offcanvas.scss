@@ -2,7 +2,7 @@
   margin-left: 75px;
   color: $light;
 
-  background: var(--background-color-ui) !important;
+  /*background: var(--background-color-ui) !important;*/
   /* box-shadow: 0 8px 32px 0 rgba(33, 37, 41, 0.18);
   backdrop-filter: blur( 8px );
   -webkit-backdrop-filter: blur( 8px ); */
@@ -16,5 +16,5 @@
 }
 
 .offcanvas-header, .offcanvas-body {
-  background: var(--background-color-ui);
+  /*background: var(--background-color-ui);*/
 }
