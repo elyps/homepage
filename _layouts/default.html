@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body onload="cookieMsgShow();" style="transition: 200ms ease-in-out;">
+  <body style="transition: 200ms ease-in-out;">
 
   <div class="fade-out-fast d-flex justify-content-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);transition: 200ms ease-in-out;">
     <div class="spinner-grow text-pink" role="status">
@@ -28,6 +28,10 @@
   </body>
 
 </html>
+
+<script>
+  setTimeout(function() { cookieMsgShow(); }, 2000);
+</script>
 
 <script>
 
