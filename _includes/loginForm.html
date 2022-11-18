@@ -1,26 +1,25 @@
 
 
-<form onSubmit="return validateForm();" name="loginform" method="post" action="/dashboard/">
+<form onsubmit="return validateForm()" name="loginform" method="post">
   <div class="mb-3 text-center">
     <h5 for="exampleInputPassword1" class="form-label">Auth-Code</h5>
-      <div class="d-flex justify-content-around">
-      <input type="password" maxlength="1" class="form-control border-none pin-field me-1" name="authCodeNr1">
-      <input type="password" maxlength="1" class="form-control border-none pin-field me-1" name="authCodeNr2">
-      <input type="password" maxlength="1" class="form-control border-none pin-field me-1" name="authCodeNr3">
-      <input type="password" maxlength="1" class="form-control border-none pin-field me-1" name="authCodeNr4">
-      <input type="password" maxlength="1" class="form-control border-none pin-field me-1" name="authCodeNr5">
+      <div class="d-flex justify-content-center">
+      <input type="password" maxlength="1" class="form-control border-none pin-field me-0" name="authCodeNr1">
+      <input type="password" maxlength="1" class="form-control border-none pin-field me-0" name="authCodeNr2">
+      <input type="password" maxlength="1" class="form-control border-none pin-field me-0" name="authCodeNr3">
+      <input type="password" maxlength="1" class="form-control border-none pin-field me-0" name="authCodeNr4">
+      <input type="password" maxlength="1" class="form-control border-none pin-field me-0" name="authCodeNr5">
       <input type="password" maxlength="1" class="form-control border-none pin-field" name="authCodeNr6">
     </div>
   </div>
   <div class="d-grid p-2 mt-4">
-    <button type="submit" class="btn btn-green">Submit</button>
+    <input type="submit" class="btn btn-green" value="Submit">
   </div>
 </form>
 
 <script>
 
-  function validateForm(e) {
-    e.preventDefault();
+  function validateForm() {
     let authCodeNr1 = document.loginform.authCodeNr1.value;
     let authCodeNr2 = document.loginform.authCodeNr2.value;
     let authCodeNr3 = document.loginform.authCodeNr3.value;
@@ -34,7 +33,10 @@
     let number5 = "5";
     let number6 = "6";
     if ((authCodeNr1 == number1) && (authCodeNr2 == number2) && (authCodeNr3 == number3) && (authCodeNr4 == number4) && (authCodeNr5 == number5) && (authCodeNr6 == number6)) {
-     return true;
+      localStorage.setItem('auth-code', 'valid');
+      alert("Success. Auth-Code valid!");
+      window.location="/dashboard/";
+      return false;
     }
     else {
       alert("Auth-Code not valid, please check your Auth-Code and try again.");

@@ -1,0 +1,7 @@
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  @extend .btn-pink;
+}
+
+.nav-item button {
+  color: var(--text-color) !important;
+}

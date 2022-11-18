@@ -1,18 +1,22 @@
 .btn-pink {
   background: $purple;
   color: $light;
+  cursor: default !important;
   &:hover {
     background: $purple-600;
     color: $gray-400;
+    cursor: crosshair !important;
   }
 }
 
 .btn-outline-pink {
   border-color: $purple;
   color: $purple;
+  cursor: default !important;
   &:hover {
     background: $purple;
     color: $light;
+    cursor: crosshair !important;
   }
 }
 
@@ -32,5 +36,12 @@
   &:hover {
     background: rgba(24, 151, 114, 1.00);
     color: $gray-400;
+  }
+}
+
+.btn, li, .nav-item, .nav-pills, .nav-link {
+  cursor: default !important;
+  &:hover {
+    cursor: crosshair !important;
   }
 }

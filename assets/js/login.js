@@ -11,12 +11,11 @@ function validateForm() {
   let number4 = "4";
   let number5 = "5";
   let number6 = "6";
-  if (( authCodeNr1 == number1) && (authCodeNr2 == number2) && ( authCodeNr3 == number3) && (authCodeNr4 == number4) && ( authCodeNr5 == number5) && (authCodeNr6 == number6)) {
-    let dash = document.getElementById('dashLink');
-    dash.click();
-    document.location.href = "{{ '/dashboard/' | relative_url }}";
-  }
-  else {
+  if ((authCodeNr1 == number1) && (authCodeNr2 == number2) && (authCodeNr3 == number3) && (authCodeNr4 == number4) && (authCodeNr5 == number5) && (authCodeNr6 == number6)) {
+    alert("Success! Your Auth-Code is valid.");
+    window.location = "/dashboard/";
+    return false;
+  } else {
     alert("Auth-Code not valid, please check your Auth-Code and try again.");
     return false;
   }

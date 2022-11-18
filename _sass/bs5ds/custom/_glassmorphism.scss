@@ -1,6 +1,6 @@
 .gm {
-  backdrop-filter: blur(16px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  backdrop-filter: blur(32px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(180%) !important;
   background: var(--background-color-ui-h) !important;
-  border: 1px solid rgba(255, 255, 255, 0.125) !important;
+  /*border: 1px solid rgba(200, 200, 200, 0.125) !important;*/
 }
