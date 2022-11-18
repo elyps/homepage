@@ -9,7 +9,7 @@ menu:
   projects: Projekte
   contact: Kontakt
   categories: Kategorien
-  login: Anmelden
+  login: Auth-Code
 
 about:
   title: Über mich
@@ -26,7 +26,7 @@ navbar:
   search:
     title: Suche
     sub_title: Artikel in unserer Datenbank
-  login: Anmelden
+  login: Auth-Code
 
 footer:
   subscribe: Einschreiben

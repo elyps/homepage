@@ -26,4 +26,9 @@ body {
   flex-direction: column;
   overflow-wrap: break-word;
   cursor: default !important;
+  margin-left: 75px !important;
+
+  @media (max-width: 500px) {
+    margin-left: 0 !important;
+  }
 }
