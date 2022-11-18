@@ -9,3 +9,12 @@
 textarea {
   resize: none;
 }
+
+#authCodeNr1, #authCodeNr2, #authCodeNr3, #authCodeNr4, #authCodeNr5, #authCodeNr6 {
+  width: 3rem !important;
+  height: 3rem !important;
+  line-height: 3rem !important;
+  font-size: 2rem;
+  padding-left: 1.1rem;
+  /*color: rgba(32, 201, 151, 1.00) !important;*/
+}

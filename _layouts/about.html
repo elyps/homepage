@@ -16,11 +16,52 @@ layout: default
       <p>{% t 'about.message' %}</p>
   </div>
 
-  <div class="col-12 post-content">
     {{ content }}
+
+  <div class="col-md-6 my-5">
+    <h4>My Experience</h4>
+    <p>{% t 'about.experience' %}</p>
   </div>
+
+  <div class="col-md-6 my-5">
+    <h4>In My Freetime</h4>
+    <p>{% t 'about.freetime' %}</p>
+  </div>
+
+  <div class="d-flex justify-content-around mt-4">
+  <h4>{% t 'about.playlist' %}</h4>
+  <h4>{% t 'about.podcast' %}</h4>
+  </div>
+
+  <div class="d-flex justify-content-around my-3">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6J5NfMJS675?utm_source=generator&theme=0" width="48%" height="380" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/4XPl3uEEL9hvqMkoZrzbx5?utm_source=generator&theme=0&t=0" width="48%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="d-flex justify-content-around mb-5">
+
+  <a href="https://open.spotify.com/playlist/37i9dQZF1DX6J5NfMJS675?si=TycGwUoESfaE5qqHOJ5Q1A" class="d-flex align-items-center" target="_blank">
+  <span>{% t 'about.playlist_link' %}&ensp;</span>
+  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+  </svg>
+  </a>
+
+  <a href="https://open.spotify.com/show/4XPl3uEEL9hvqMkoZrzbx5?si=2ZdpCm4oTdyispR_62HecA" class="d-flex align-items-center" target="_blank">
+  <span>{% t 'about.podcast_link' %}&ensp;</span>
+  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+  </svg>
+  </a>
+
+  </div>
+
+
 </div>
 
-<div class="footer">
+<div class="footer mt-5">
   {%- include footer.html -%}
 </div>

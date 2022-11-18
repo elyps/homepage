@@ -1,13 +1,13 @@
 ---
 layout: project
-tags: project swift
+tags: project homepage
 categories: development
-excerpt_separator: <!--more-->
+excerpt:
 author: Bastian Fischer
 date: 2016-10-13
 modified_date: 2016-10-25
-title: "Project Swift"
-permalink: /project-swift/
+title: "Project Homepage"
+permalink: /homepage/
 ---
 
-# Project Swift
+# Project Homepage

@@ -9,15 +9,24 @@ menu:
   projects: Projects
   contact: Contact
   categories: Categories
+  login: Login
 
 about:
   title: About Me
-  welcome: Hello.
-  message: >
-    I'm Bastian Fischer.
-    Welcome to my Digital Garden.
-    Feel free t play around, look at some awesome Projects or
-    read some interesting articles.
+  welcome: 👋🏻 Hello.
+  playlist: 🎧 My DEV Playlist
+  playlist_link: Techno Bunker on Spotify
+  podcast: 🎤 My DEV Podcast
+  podcast_link: Darknet Diaries on Spotify
+  message: Ich bin Bastian Fischer. Ich bin Software Entwickler, UI/UX Designer & Open-Sourcerer aus Kiel, Schleswig-Holstein. Willkommen in meinem digitalen Garten. Fühlen Sie sich frei, herumzuspielen, sich einige tolle Projekte anzusehen oder einige interessante Artikel zu lesen.
+  experience: Durch ein Informatik Studium, einer Ausbildung als Fachinformatiker und durch persönliche Begeisterung fürs Programmieren beschäftige ich mich seit ca. 25 Jahren mit Programmiersprachen. Meine vorrangige Sprache ist Swift und die Entwicklung für Desktop- und Mobile-Anwendungen für Apple Geräte.
+  freetime: Durch ein Informatik Studium, einer Ausbildung als Fachinformatiker und durch persönliche Begeisterung fürs Programmieren beschäftige ich mich seit ca. 25 Jahren mit Programmiersprachen. Meine vorrangige Sprache ist Swift und die Entwicklung für Desktop- und Mobile-Anwendungen für Apple Geräte.
+
+navbar:
+  search:
+    title: Search
+    sub_title: Articles in our Database
+  login: Login
 
 footer:
   subscribe: Subscribe

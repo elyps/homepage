@@ -22,7 +22,7 @@ layout: default
     {%- for project in projects -%}
     <a class="post-link" href="{{ project.url | relative_url }}">
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100 gm">
           <div class="bg-pink" style="height: 2px"></div>
           <!-- <img src="{{ 'assets/img/pawel-czerwinski-GFqo8rVmH30-unsplash-128kb.png' | relative_url }}" class="card-img-top" alt="post-image"> -->
           <div class="card-body">
@@ -61,6 +61,6 @@ layout: default
 
 </div>
 
-<div class="footer">
+<div class="footer footer-articles">
   {%- include footer.html -%}
 </div>

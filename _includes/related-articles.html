@@ -2,9 +2,9 @@
 {% if related.size > 0 %}
 <div class="col-12 mx-auto py-4">
   <h4>{{ site.data.translations['relatedPosts'][page.lang] }}</h4>
-{% for post in related limit: 3 %}
-  <a href="{{ post.url | relative_url }}">
-    <div class="card my-1">
+  {% for post in related limit: 3 %}
+<a href="{{ post.url | relative_url }}">
+    <div class="card gm my-1">
       <div class="bg-pink" style="height: 1px"></div>
       <div class="card-body">
         <h6 class="card-title">{{ post.title | escape }}</h6>

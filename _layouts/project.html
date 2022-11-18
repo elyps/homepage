@@ -16,21 +16,9 @@ layout: default
       <div class="d-flex">
         <span>
           {% for project in site.projects %}
-            {% if project.tags[0] %}
-            <a class="btn btn-sm fs-7 btn-outline-pink" href="javascript:void">{{ project.tags[0] }}</a>
-            {% endif %}
-            {% if project.tags[1] %}
-            <a class="btn btn-sm fs-7 btn-outline-pink" href="javascript:void">{{ project.tags[1] }}</a>
-            {% endif %}
-            {% if project.tags[2] %}
-            <a class="btn btn-sm fs-7 btn-outline-pink" href="javascript:void">{{ project.tags[2] }}</a>
-            {% endif %}
-            {% if project.tags[3] %}
-            <a class="btn btn-sm fs-7 btn-outline-pink" href="javascript:void">{{ project.tags[3] }}</a>
-            {% endif %}
-            {% if project.tags[4] %}
-            <a class="btn btn-sm fs-7 btn-outline-pink" href="javascript:void">{{ project.tags[4] }}</a>
-            {% endif %}
+            {% for tag in site.tags %}
+              <a class="btn btn-sm fs-7 btn-outline-pink" href="javascript:void">{{ tag[0] }}</a>
+            {% endfor %}
           {% endfor %}
         </span>
       </div>

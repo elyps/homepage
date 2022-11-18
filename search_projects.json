@@ -1,0 +1,13 @@
+---
+---
+[
+  {% for project in site.projects %}
+  {
+    "title"    : "{{ project.title | escape }}",
+    "url"      : "{{ site.baseurl }}{{ project.url }}",
+    "category" : "{{ project.category }}",
+    "tags"     : "{{ project.tags | join: ', ' }}",
+    "date"     : "{{ project.date }}"
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

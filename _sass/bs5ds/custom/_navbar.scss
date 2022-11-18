@@ -5,13 +5,10 @@
   height: 100vh;
   position: fixed;
   z-index: 9000;
+  border-radius-topleft: 0 !important;
+  border-radius-bottomleft: 0 !important;
 
   background: var(--background-color-ui) !important;
-  /* box-shadow: 0 8px 32px 0 rgba(33, 37, 41, 0.10);
-  backdrop-filter: blur( 8px );
-  -webkit-backdrop-filter: blur( 8px ); */
-  /* border-radius: 10px; */
-  /* border: 1px solid rgba( 255, 255, 255, 0.10 ); */
 
   @media (max-width: 500px) {
       width: 100%;

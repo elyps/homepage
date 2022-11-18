@@ -20,7 +20,8 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
-baseurl_root: .
+baseurl:
+baseurl_root:
 lang: de
 
 feed:
@@ -43,7 +44,6 @@ collections:
     output: true
   posts:
     output: true
-    sidebar_label: Articles
 
   # generate social links in footer
   social_links:
