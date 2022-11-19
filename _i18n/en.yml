@@ -29,7 +29,7 @@ navbar:
   login: Auth-Code
 
 footer:
-  subscribe: Subscribe
+  subscribe: Subscribe to RSS-Feed
   public_key: Public Key
   impress: Impress
   data_policy: Data-Policy

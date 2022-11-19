@@ -29,7 +29,7 @@ navbar:
   login: Auth-Code
 
 footer:
-  subscribe: Einschreiben
+  subscribe: RSS-Feed Abonnnieren
   public_key: Öffentlicher Schlüssel
   impress: Impressum
   data_policy: Datenschutz
