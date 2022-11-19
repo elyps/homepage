@@ -9,9 +9,16 @@
       </svg>
     </button>
     <a class="navbar-brand ms-2" rel="author" href="{{ '/' | relative_url }}">
-      <div class="rotate-90 nav-title">
-        <span>{{ site.main_title.surname | escape }}</span>
-        <span class="fw-2">{{ site.main_title.subname | escape }}</span>
+      <div class="rotate-90 nav-title d-flex align-items-center">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-code-slash me-2 bg-pink br-6 m-2 p-1"
+               viewBox="0 0 16 16">
+          <path
+            d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+        </svg>
+        </span>
+        <span class="me-2">{{ site.main_title.surname | escape }}</span>
+        <span class="me-2 fw-2">{{ site.main_title.subname | escape }}</span>
         <span>{{ site.main_title.name | escape }}</span>
       </div>
     </a>
@@ -19,8 +26,10 @@
 
     <div class="navbar-nav dropdown dropdown-nav p-2" style="margin-left:-12px">
       <button type="button" class="btn btn-link mb-3" data-bs-toggle="modal" data-bs-target="#loginModal">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="rgba(32, 201, 151, 1.00)" class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="rgba(32, 201, 151, 1.00)"
+             class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
+          <path
+            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"/>
         </svg>
       </button>
 
@@ -34,7 +43,8 @@
 
 
       <li class="nav-item dropend pb-2 lang-switcher">
-        <a class="btn btn-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="btn btn-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgba(111, 66, 193, 1.00)"
                class="bi bi-translate" viewBox="0 0 16 16">
             <path
@@ -101,7 +111,8 @@
 
       </div>
       <hr class="ms-3" style="border: 1px solid rgba(111, 66, 193, 1.00); width: 50%; margin-top: -0.5rem;">
-      <div class="ms-3 text-white-50" style="margin-top: -0.5rem"><h6><span class="text-pink fw-bold">{{ site.posts.size }}</span> {% t 'navbar.search.sub_title' %}</h6></div>
+      <div class="ms-3 text-white-50" style="margin-top: -0.5rem"><h6><span class="text-pink fw-bold">{{ site.posts.size }}</span>
+        {% t 'navbar.search.sub_title' %}</h6></div>
       <div class="modal-body">
         {%- include search_articles.html -%}
       </div>
@@ -117,8 +128,10 @@
     <div class="modal-content gm">
       <div class="modal-header">
         <h1 class="modal-title fs-4 d-flex align-items-center" id="loginModalLabel">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="rgba(32, 201, 151, 1.00)" class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
-            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="rgba(32, 201, 151, 1.00)"
+               class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"/>
           </svg>&ensp;
           <span>{% t 'navbar.login' %}</span>
         </h1>
@@ -133,7 +146,8 @@
 
       </div>
       <hr class="ms-3" style="border: 1px solid rgba(111, 66, 193, 1.00); width: 50%; margin-top: -0.5rem;">
-      <div class="ms-3 text-white-50" style="margin-top: -0.5rem"><h6>Wenn Sie einen Auth-Code von mir bekommen haben, geben Sie ihn hier bitte ein.</h6></div>
+      <div class="ms-3 text-white-50" style="margin-top: -0.5rem"><h6>Wenn Sie einen Auth-Code von mir bekommen haben,
+        geben Sie ihn hier bitte ein.</h6></div>
       <div class="modal-body">
         {%- include loginForm.html -%}
       </div>
