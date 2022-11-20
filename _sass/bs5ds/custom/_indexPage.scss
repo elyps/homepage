@@ -54,7 +54,7 @@
 .title-surname-oc {
   position: relative;
   top: 20px;
-  right: 70px;
+  right: 50px;
   padding-left: 1rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
@@ -65,25 +65,25 @@
   font-size: 1rem;
   height: 45px;
   line-height: 1.5rem;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.3rem;
   color: $light;
 }
 
 .title-subname-oc {
   position: relative;
-  top: -10px;
-  left: 160px;
-  padding-left: 1rem;
-  padding-right: 0.5rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.5rem;
+  top: -5px;
+  left: 110px;
+  padding-left: 0.8rem;
+  padding-right: 0.3rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background: rgba(111, 66, 193, 0.60);
   border: 1px solid $purple-300;
   box-shadow:4px 4px 10px rgba(50,50,50,0.1);
   font-size: 0.8rem;
-  letter-spacing: 0.6rem;
-  line-height: 1.7rem;
-  height: 35px;
+  letter-spacing: 0.3rem;
+  line-height: 1.6rem;
+  height: 30px;
   width: auto;
   color: $light;
 }
@@ -91,7 +91,7 @@
 .title-name-oc {
   position: relative;
   top: 42px;
-  right: 77px;
+  right: 57px;
   padding-left: 1rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
@@ -102,7 +102,7 @@
   font-size: 1rem;
   height: 45px;
   line-height: 1.5rem;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.3rem;
   color: $light;
 }
 
@@ -121,7 +121,7 @@
     font-size: 1.4rem;
     height: 65px;
     line-height: 3rem;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.3rem;
     color: $light;
   }
 
@@ -137,7 +137,7 @@
     border: 1px solid $purple-300;
     box-shadow:4px 4px 10px rgba(50,50,50,0.1);
     font-size: 1rem;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.3rem;
     line-height: 2rem;
     height: 45px;
     width: auto;
@@ -158,7 +158,7 @@
     font-size: 1.4rem;
     height: 65px;
     line-height: 3rem;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.3rem;
     color: $light;
   }
 }
