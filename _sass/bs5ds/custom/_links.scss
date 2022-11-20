@@ -1,12 +1,12 @@
 a {
   text-decoration: none;
   color: $purple;
-  cursor: crosshair !important;
+  cursor: pointer !important;
 }
 
 a:hover {
   color: $purple-300;
-  cursor: crosshair !important;
+  cursor: pointer !important;
 }
 
 a.nav-link {
@@ -14,7 +14,7 @@ a.nav-link {
   border-radius: 6px;
   border: 1px solid transparent;
   color: rgba(173, 181, 189, 1.00);
-  cursor: crosshair !important;
+  cursor: pointer !important;
 }
 
 a.nav-link:hover {
@@ -22,5 +22,5 @@ a.nav-link:hover {
   border: 1px solid $purple-300;
   border-radius: 6px;
   color: #f1f1f1 !important;
-  cursor: crosshair !important;
+  cursor: pointer !important;
 }
