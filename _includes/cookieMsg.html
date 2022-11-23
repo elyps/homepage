@@ -6,21 +6,21 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content text-center gm">
       <div class="modal-header">
-        <h1 class="fs-5 m-auto fs-4 fw-bold" id="exampleModalLabel">
+        <h1 class="fs-5 pt-2 m-auto fs-4 fw-bold" id="exampleModalLabel">
           <span class="cookie1">🍪</span>
           <span class="cookie2">🍪</span>
           <span class="cookie3">🍪</span>
           Cookies
         </h1>
       </div>
-    <hr class="m-auto" style="border: 1px solid rgba(111, 66, 193, 1.00); width: 50%; margin-top: -1rem;">
+      <!-- <hr class="m-auto" style="border: 1px solid rgba(111, 66, 193, 1.00); width: 50%; margin-top: -1rem;"> --> 
       <div class="modal-body">
-        I love cookies and use them to enhance your experience. If you don't agree with that please leave this website.
+        {% t 'cookies.text' %}
       <br><br>
-      <strong>Thank you for your visit!</strong>
+      <strong>{% t 'cookies.thanks' %}</strong>
       </div>
       <div class="d-grid p-4">
-        <button type="button" class="btn btn-pink" id="acceptCookies">That's OK!</button>
+        <button type="button" class="btn btn-pink" id="acceptCookies">{% t 'cookies.btn' %}</button>
       </div>
     </div>
   </div>

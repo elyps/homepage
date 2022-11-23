@@ -65,3 +65,9 @@ tags:
   title: Tags
   sub_title: All tags from all articles
   not_found: No tags found.
+
+cookies:
+  text: I love cookies and use them to enhance your experience. If you don't agree with that please leave this website.
+  thanks: Thank you for your visit!
+  btn: That's OK!
+
